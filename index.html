@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Local Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+  
+    .img-spacing {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+    .text-underline {
+  text-decoration: underline;
+}
+
+    body {
+      background-color: #fff;
+      color: #333;
+    }
+    .img-thumb {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    .caption-box {
+      padding: 10px;
+    }
+    .section-title {
+      margin: 40px 0 20px;
+      text-align: center;
+    }
+    .modal-img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Siquijor Famous Restaurants</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+         <li class="nav-item"><a class="nav-link active" href="#FaQ">FaQ</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Menu
+          </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#SanJuan">San Juan Municipality</a></li>
+            <li><a class="dropdown-item" href="#Siquijor">Siquijor Municipality</a></li>
+              
+            <li><a class="dropdown-item" href="#Larena">Larena Municipality</a>
+            </li>
+            <li><a class="dropdown-item" href="#Maria">Maria Municipality</a>
+            </li>
+            </li>
+            <li><a class="dropdown-item" href="#Lazi">Lazi Municipality</a>
+            </li>          
+          </ul>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+<!-- San Juan Restaurant-->
+<div id="SanJuan" class="container mt-4">
+  <h1 class="section-title"><span class="text-underline">San Juan Restaurants</span></h1>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+
+    <!--  Salamansas -->
+    <div class="img-spacing col">
+      <img 
+        src="img/Salamandas front.jpeg"
+        alt="Image 1" 
+        class="img-thumb"
+        data-bs-toggle="modal"
+        data-bs-target="#imageModal"
+        data-title="Salamandanas Restaurant"
+        data-left="4.3 (178)"
+        data-right="Coco Grove Beach Resort, San Juan, 6227 Siquijor"
+        data-img="img/Salamandas 1.jpeg"
+      >
+      <div class="caption-box, col mt-4">
+      <center> <span class="text-underline"><h3>Salamandas</h3></span> </center>
+       <h5>Service Option </h5>
+        <p>Outdoor seating,
+           Curbside pickup,
+           Takeout,
+          Dine-in,
+          Delivery,
+  </p>
+          <h5>Offerings</h5>
+  <p>Alcohol,
+  Cocktails,
+  Hard Liquor,
+  Wine,
+  Beer,
+  Coffee,
+  </p>
+   
+      </div>
+    </div>
+
+    <!-- E copy for more images -->
+
+
+    <!--  Baha Bar -->
+    <div class="img-spacing col">
+      <img 
+        src="img/Baha Ba'r front.jpeg"
+        alt="Image 1" 
+        class="img-thumb"
+        data-bs-toggle="modal"
+        data-bs-target="#imageModal"
+        data-title="Baha Ba'r"
+        data-left="4.5 (259)"
+        data-right="San Juan, Maite, Siquijor, 6227 Siquijor"
+        data-img="img/Baha Ba'r 1.jpeg"
+      >
+      <div class="caption-box, col mt-4">
+      <center> <span class="text-underline"><h3>Baha Ba'r</h3></span> </center>
+       <h5>Service Option </h5>
+  <p>Outdoor seating,
+Curbside pickup,
+Takeout,
+Dine-in,
+Delivery,
+  </p>
+
+          <h5>Offerings</h5>
+  <p>Alcohol,
+Beer,
+Cocktails,
+Coffee,
+Happy hour drinks,
+Hard liquor,
+Late-night food,
+Organic dishes,
+Quick bite,
+Small plates,
+Vegan options,
+Vegetarian options,
+Wine,
+  </p>
+      </div>
+    </div>
+
+    <!-- E copy for more images -->
+
+    <!-- CocoRico-->
+    <div class="img-spacing col">
+      <img 
+        src="img/CocoRico front.jpeg" 
+        alt="Image 1" 
+        class="img-thumb"
+        data-bs-toggle="modal"
+        data-bs-target="#imageModal"
+        data-title="CocoRico Siquijor Bar and Restaurant"
+        data-left="4.9 (1,470)"
+        data-right="San Juan, Siquijor"
+        data-img="img/CocoRico 1.jpeg"
+      >
+      <div class="caption-box, col mt-4">
+      <center> <span class="text-underline"><h3>CocoRico Siquijor Bar & Restaurant</h3></span> </center>
+       <h5>Service Option </h5>
+        <p>Outdoor seating,
+Curbside pickup,
+Delivery,
+Takeout,
+Dine-in,
+  </p>
+          <h5>Offerings</h5>
+  <p>Alcohol,
+Beer,
+Cocktails,
+Coffee,
+Happy hour drinks,
+Hard liquor,
+Quick bite,
+Small plates,
+Wine,
+  </p>
+   
+      </div>
+    </div>
+
+    <!-- E copy for more images -->
+
+    <!--  Tambayanan -->
+    <div class="img-spacing col">
+      <img 
+        src="img/Tambayanan front.jpeg" 
+        alt="Image 1" 
+        class="img-thumb"
+        data-bs-toggle="modal"
+        data-bs-target="#imageModal"
+        data-title="Tambayanan"
+        data-left="4.6 (228)"
+        data-right="Tubod,San Juan, Siquijor"
+        data-img="img/Tambayanan 1.jpeg"
+      >
+      <div class="caption-box, col mt-4">
+      <center> <span class="text-underline"><h3>Tambayanan</h3></span> </center>
+       <h5>Service Option </h5>
+        <p>Outdoor seating,
+Takeout,
+Dine-in,
+  </p>
+          <h5>Offerings</h5>
+  <p>Alcohol,
+Beer,
+Cocktails,
+Coffee,
+Hard liquor,
+Quick bite,
+Small plates,
+Wine,
+  </p>
+   
+      </div>
+    </div>
+
+    <!-- E copy for more images -->
+
+    <!--  Ohlala-->
+    <div class="img-spacing col">
+      <img 
+        src="img/Ohlala front.jpeg" 
+        alt="Image 1" 
+        class="img-thumb"
+        data-bs-toggle="modal"
+        data-bs-target="#imageModal"
+        data-title="Ohlala Siquijor "
+        data-left="4.7 (226)"
+        data-right="Solangon, San Juan, 6227 Siquijor"
+        data-img="img/Ohlala 1.jpeg"
+      >
+      <div class="caption-box, col mt-4">
+      <center> <span class="text-underline"><h3>Ohlala Siquijor</h3></span> </center>
+       <h5>Service Option </h5>
+        <p>Outdoor seating,
+Curbside pickup,
+No-contact delivery,
+Drive-through,
+Onsite services,
+Takeout,
+Dine-in,
+  </p>
+          <h5>Offerings</h5>
+  <p>Alcohol,
+Beer,
+Coffee,
+Late-night food,
+Organic dishes,
+Quick bite,
+Small plates,
+Vegan options,
+Vegetarian options,
+  </p>
+   
+      </div>
+    </div>
+
+    <!-- E copy for more images -->
+
+
+
+<!--ayaw e copy og apil ang duha ka div sa ubos ani-->
+
+  </div>
+</div>
+
+
+
+<div id="Siquijor" class="container mt-4">
+  <h1 class="section-title"><span class="text-underline">Siquijor Restaurants</span></h1>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+
+    <!--  Wakanda -->
+    <div class="img-spacing col">
+      <img 
+        src="img/Wakanda front.jpeg" 
+        alt="Image 1" 
+        class="img-thumb"
+        data-bs-toggle="modal"
+        data-bs-target="#imageModal"
+        data-title="Wakanda Restaurant & Bar"
+        data-left="4.8 (1k)"
+        data-right="Siquijor Circumferential Road, Siquijor"
+        data-img="img/Wakanda 1.jpeg"
+      >
+      <div class="caption-box, col mt-4">
+      <center> <span class="text-underline"><h3>Wakanda Restaurant & Bar</h3></span> </center>
+       <h5>Service Option </h5>
+        <p>Outdoor seating,
+Takeout,
+Dine-in,
+Delivery,
+  </p>
+          <h5>Offerings</h5>
+  <p>Alcohol,
+Beer,
+Cocktails,
+Coffee,
+Hard liquor,
+Late-night food,
+Organic dishes,
+Small plates,
+Vegan options,
+Vegetarian options,
+Wine,
+  </p>
+   
+      </div>
+    </div>
+
+    <!-- E copy for more images -->
+
+    <!--  Bellview-->
+    <div class="img-spacing col">
+      <img 
+        src="img/Bellview front.jpeg" 
+        alt="Image 1" 
+        class="img-thumb"
+        data-bs-toggle="modal"
+        data-bs-target="#imageModal"
+        data-title="Bellview Kuzzina Bar"
+        data-left="4.0 (251)"
+        data-right="6G77+RCH, A. Mabini St, Siquijor, 6225 Siquijor"
+        data-img="img/Bellview 1.jpeg"
+      >
+      <div class="caption-box, col mt-4">
+      <center> <span class="text-underline"><h1>Bellview Kuzzina Bar</h1></span> </center>
+       <h5>Service Option </h5>
+        <p>Outdoor seating,
+Takeout,
+Dine-in,
+
+  </p>
+          <h5>Offerings</h5>
+  <p>Alcohol,
+Beer,
+Cocktails,
+Coffee,
+Hard liquor,
+Quick bite,
+Small plates,
+Wine,
+  </p>
+   
+      </div>
+    </div>
+
+    <!-- E copy for more images -->
+
+
+<!--ayaw e copy og apil ang duha ka div sa ubos ani-->
+
+  </div>
+</div>
+
+<div id="Larena" class="container mt-4">
+  <h1 class="section-title"><span class="text-underline">Larena Restaurants</span></h1>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+
+    <!-- Louissiana's Kitchen -->
+    <div class="img-spacing col">
+      <img 
+        src="img/Louissiana front .jpeg" 
+        alt="Image 1" 
+        class="img-thumb"
+        data-bs-toggle="modal"
+        data-bs-target="#imageModal"
+        data-title="Louissiana's Kitchen"
+        data-left="4.8 (64)"
+        data-right="Old Palawan Pawnshop, Roxas St, Larena, 6226 Siquijor"
+        data-img="img/Louissiana 1.jpeg"
+      >
+      <div class="caption-box, col mt-4">
+      <center> <span class="text-underline"><h1>Louissiana's Kitchen</h1></span> </center>
+       <h5>Service Option </h5>
+        <p>Outdoor seating,
+          Dine-in,
+          
+  </p>
+          <h5>Offerings</h5>
+  <p>Coffee,
+Quick bite,
+Small plates,
+  </p>
+   
+      </div>
+    </div>
+
+    <!-- E copy for more images -->
+
+    <!--C's -->
+    <div class="img-spacing col">
+      <img 
+        src="img/Cs front.jpeg" 
+        alt="Image 1" 
+        class="img-thumb"
+        data-bs-toggle="modal"
+        data-bs-target="#imageModal"
+        data-title="C's Kitchen"
+        data-left="4.5 (53)"
+        data-right="Larena, Siquijor"
+        data-img="img/Cs 1.jpeg"
+      >
+      <div class="caption-box, col mt-4">
+      <center> <span class="text-underline"><h1>C's Kitchen</h1></span> </center>
+       <h5>Service Option </h5>
+        <p>Outdoor seating,
+           Takeout,
+          Dine-in,
+          Delivery,
+  </p>
+          <h5>Offerings</h5>
+  <p>Alcohol,
+Beer,
+Cocktails,
+Hard liquor,
+Quick bite,
+Small plates,
+  </p>
+   
+      </div>
+    </div>
+
+    <!-- E copy for more images -->
+
+
+<!--ayaw e copy og apil ang duha ka div sa ubos ani-->
+
+  </div>
+</div>
+
+<div id="Maria" class="container mt-4">
+  <h1 class="section-title"><span class="text-underline">Maria Restaurants</span></h1>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+
+    <!--  Luciene's Inn Resto Bar -->
+    <div class="img-spacing col">
+      <img 
+        src="img/Luciene's front.jpeg" 
+        alt="Image 1" 
+        class="img-thumb"
+        data-bs-toggle="modal"
+        data-bs-target="#imageModal"
+        data-title="Luciene's Inn Resto Bar"
+        data-left="4.9 (195)"
+        data-right="Siquijor Circumferential Road, Maria, 6229 Siquijor"
+        data-img="img/Luciene's 1.jpeg"
+      >
+      <div class="caption-box, col mt-4">
+      <center> <span class="text-underline"><h1>Luciene's Inn Resto Bar</h1></span> </center>
+       <h5>Service Option </h5>
+        <p>Outdoor seating,
+          Dine-in,
+          
+  </p>
+          <h5>Offerings</h5>
+  <p>Alcohol,
+Beer,
+Coffee,
+Quick bite,
+Small plates,
+  </p>
+   
+      </div>
+    </div>
+
+    <!-- E copy for more images -->
+
+    <!--  Daisy Food House & Inn-->
+    <div class="img-spacing col">
+      <img 
+        src="img/Daisy Food front.jpeg" 
+        alt="Image 1" 
+        class="img-thumb"
+        data-bs-toggle="modal"
+        data-bs-target="#imageModal"
+        data-title="Daisy Food House & Inn"
+        data-left="5.0 (124)"
+        data-right="5M87+23G, Siquijor Circumferential Road, Maria, Siquijor"
+        data-img="img/Daisy Food 1.jpeg"
+      >
+      <div class="caption-box, col mt-4">
+      <center> <span class="text-underline"><h1>Daisy Food House & Inn</h1></span> </center>
+       <h5>Service Option </h5>
+        <p>
+           Takeout,
+          Dine-in,
+          
+  </p>
+          <h5>Offerings</h5>
+  <p>Alcohol,
+Beer,
+Quick bite,
+Small plates,
+  </p>
+   
+      </div>
+    </div>
+
+    <!-- E copy for more images -->
+
+
+<!--ayaw e copy og apil ang duha ka div sa ubos ani-->
+
+  </div>
+</div>
+
+<div id="Lazi" class="container mt-4">
+  <h1 class="section-title"><span class="text-underline">Lazi Restaurants</span></h1>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+
+    <!--Y Road Restaurant -->
+    <div class="img-spacing col">
+      <img 
+        src="img/Y Road front.jpeg" 
+        alt="Image 1" 
+        class="img-thumb"
+        data-bs-toggle="modal"
+        data-bs-target="#imageModal"
+        data-title="Y Road Restaurant"
+        data-left="4.6 (231)"
+        data-right="4JJJ+P2, Lazi, Siquijor"
+        data-img="img/Y Road 1.jpeg"
+      >
+      <div class="caption-box, col mt-4">
+      <center> <span class="text-underline"><h1>Y Road Restaurant</h1></span> </center>
+       <h5>Service Option </h5>
+        <p>Outdoor seating,
+           Curbside pickup,
+           Takeout,
+          Dine-in,
+          No-Contact Delivery,
+  </p>
+          <h5>Offerings</h5>
+  <p>Alcohol,
+Beer,
+Coffee,
+Hard liquor,
+Quick bite,
+Small plates,
+  </p>
+   
+      </div>
+    </div>
+
+    <!-- E copy for more images -->
+
+    <!--  Hidden Valley Bar & Resto -->
+    <div class="img-spacing col">
+      <img 
+        src="img/Hidden front.jpeg" 
+        alt="Image 1" 
+        class="img-thumb"
+        data-bs-toggle="modal"
+        data-bs-target="#imageModal"
+        data-title="Hidden Valley Bar & Resto"
+        data-left="4.9 (309)"
+        data-right=" Lazi, Siquijor"
+        data-img="img/Hidden 1.jpeg"
+      >
+      <div class="caption-box, col mt-4">
+      <center> <span class="text-underline"><h1>Hidden Valley Bar & Resto</h1></span> </center>
+       <h5>Service Option </h5>
+        <p>Outdoor seating,
+           Takeout,
+          Dine-in,
+          
+  </p>
+          <h5>Offerings</h5>
+  <p>Alcohol,
+Beer,
+Cocktails,
+Coffee,
+Halal food,
+Hard liquor,
+Quick bite,
+Small plates,
+Vegan options,
+Vegetarian options,
+Wine,
+  </p>
+   
+      </div>
+    </div>
+
+    <!-- E copy for more images -->
+
+    <!--  Twenty4 Cafe and Burger Bar -->
+    <div class="img-spacing col">
+      <img 
+        src="img/Salamandas front.jpeg" 
+        alt="Image 1" 
+        class="img-thumb"
+        data-bs-toggle="modal"
+        data-bs-target="#imageModal"
+        data-title="Twenty4 Cafe and Burger Bar"
+        data-left="4.4 (651)"
+        data-right="Lazi, Siquijor"
+        data-img="img/Salamandas 1.jpeg"
+      >
+      <div class="caption-box, col mt-4">
+      <center> <span class="text-underline"><h1>Salamandas</h1></span> </center>
+       <h5>Service Option </h5>
+        <p>Outdoor seating,
+           Takeout,
+          Dine-in,
+  </p>
+          <h5>Offerings</h5>
+  <p>Alcohol,
+Beer,
+Coffee,
+Quick bite,
+Small plates,
+Vegan options,
+Vegetarian options,
+  </p>
+   
+      </div>
+    </div>
+
+    <!-- E copy for more images -->
+
+
+<!--ayaw e copy og apil ang duha ka div sa ubos ani-->
+
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img id="modalImage" src="" alt="Modal Image" class="modal-img mb-3">
+        <div class="row">
+          <div class="col-md-6" id="modalCaptionLeft"></div>
+          <div class="col-md-6" id="modalCaptionRight"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Footer -->
+  <footer id="FaQ" class="bg-light text-dark pt-5 pb-4">
+    <div class="container text-md-left">
+      <div class="row text-md-left">
+        
+        <!-- About Section -->
+        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-secondary">Siquijor Famous Restaurant</h5>
+          <p>Serving delicious meals made from fresh, local ingredients. Your satisfaction is our priority!</p>
+        </div>
+
+        <!-- FAQ Section as Accordion -->
+        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-secondary">FAQ</h5>
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqOneHeading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="false" aria-controls="faqOne">
+                  Do you offer vegan options?
+                </button>
+              </h2>
+              <div id="faqOne" class="accordion-collapse collapse" aria-labelledby="faqOneHeading" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes, we have a variety of delicious vegan dishes made with fresh ingredients.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqTwoHeading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                  Do you take reservations?
+                </button>
+              </h2>
+              <div id="faqTwo" class="accordion-collapse collapse" aria-labelledby="faqTwoHeading" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes, please call us or use our website to reserve your table in advance.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqThreeHeading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                  Are pets allowed?
+                </button>
+              </h2>
+              <div id="faqThree" class="accordion-collapse collapse" aria-labelledby="faqThreeHeading" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Pets are welcome in our outdoor seating area only.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-secondary">Contact</h5>
+         
+          <p><strong>Email:</strong>siquijorfamous@restaurant.com</p>
+          <p><strong>Phone:</strong> +123 456 7890</p>
+        </div>
+
+      </div>
+
+      <hr class="mb-4 mt-4">
+      <div class="row align-items-center">
+        <div class="col text-center">
+          <p>© 2025 <strong class="text-secondary">Siquijor Famous Restaurant</strong> — All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+<!-- Local Bootstrap JS -->
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<!-- Modal Script -->
+<script>
+  document.querySelectorAll('.img-thumb').forEach(img => {
+    img.addEventListener('click', () => {
+      const title = img.getAttribute('data-title');
+      const left = img.getAttribute('data-left');
+      const right = img.getAttribute('data-right');
+      const src = img.getAttribute('data-img');
+
+      document.getElementById('modalImage').src = src;
+      document.getElementById('modalCaptionLeft').innerHTML = `<h5>${title}</h5><p>${left}</p>`;
+      document.getElementById('modalCaptionRight').innerHTML = `<p>${right}</p>`;
+    });
+  });
+</script>
+
+</body>
+</html>
